@@ -1,5 +1,15 @@
 # @emdash-cms/admin
 
+## 1.3.2
+
+### Patch Changes
+
+- [#4037](https://github.com/emdash-cms/emdash/pull/4037) [`b82016d`](https://github.com/emdash-cms/emdash/commit/b82016d5b9f051b77689585ed0504b77e1929db4) Thanks [@marks-zyz](https://github.com/marks-zyz)! - Translates 1,170 admin strings that fell back to English for Brazilian Portuguese (`pt-BR`) admins, including the publishing calendar, site transfer, relations between content types, editor tables and HTML blocks, passkey setup, the Change domain dialog, the plugin registry, and the invite, sign-in, and domain-change emails. Plugin release strings now consistently use “versão” for release.
+
+- [#4210](https://github.com/emdash-cms/emdash/pull/4210) [`2ed2755`](https://github.com/emdash-cms/emdash/commit/2ed27550881c89603a45f6e2212e62209c5a7ac9) Thanks [@danielmlr](https://github.com/danielmlr)! - Completes the German admin translations so German-speaking editors see localized text in the version history, including the change list, version view, and restore dialog, as well as menu renaming and CSS classes on menu links, the AI-training setting in SEO, byline form errors, the WordPress import's bot-protection error, and scheduling labels. Themes are now called "Theme" throughout instead of "Design".
+- Updated dependencies []:
+  - @emdash-cms/blocks@1.3.2
+
 ## 1.3.1
 
 ### Patch Changes
