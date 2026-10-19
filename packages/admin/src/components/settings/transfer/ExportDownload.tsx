@@ -36,7 +36,7 @@ export function useExportDownload() {
 			try {
 				target = await openSaveTarget({
 					suggestedName: `emdash-site-${operation.id}${SITE_PACKAGE_EXTENSION}`,
-					description: t`EmDash site package`,
+					description: t`EmPress site package`,
 					mediaType: "application/x-tar",
 					extension: SITE_PACKAGE_EXTENSION,
 				});

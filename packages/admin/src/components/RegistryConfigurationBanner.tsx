@@ -11,16 +11,16 @@ export function RegistryConfigurationBanner({ error }: { error: RegistryConfigur
 
 	switch (error.field) {
 		case "registry.aggregatorUrl":
-			description = t`Check registry.aggregatorUrl in astro.config.mjs, then restart EmDash.`;
+			description = t`Check registry.aggregatorUrl in astro.config.mjs, then restart EmPress.`;
 			break;
 		case "registry.policy.minimumReleaseAge":
-			description = t`Check registry.policy.minimumReleaseAge in astro.config.mjs, then restart EmDash.`;
+			description = t`Check registry.policy.minimumReleaseAge in astro.config.mjs, then restart EmPress.`;
 			break;
 		case "registry.policy.minimumReleaseAgeExclude":
-			description = t`Check registry.policy.minimumReleaseAgeExclude in astro.config.mjs, then restart EmDash.`;
+			description = t`Check registry.policy.minimumReleaseAgeExclude in astro.config.mjs, then restart EmPress.`;
 			break;
 		default:
-			description = t`Check registry in astro.config.mjs, then restart EmDash.`;
+			description = t`Check registry in astro.config.mjs, then restart EmPress.`;
 	}
 
 	return (

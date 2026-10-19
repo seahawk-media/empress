@@ -100,7 +100,7 @@ import { UnsavedChangesGuard } from "./UnsavedChangesGuard.js";
 /** Autosave debounce delay in milliseconds */
 const AUTOSAVE_DELAY = 2000;
 // Mirrors Header.tsx's h-[58px]; the fixed mobile sheet offsets its body by it.
-const ADMIN_HEADER_HEIGHT_PX = 58;
+const ADMIN_HEADER_HEIGHT_PX = 32;
 const EDITOR_SETTINGS_MIN_WIDTH_PX = 320;
 const EDITOR_SETTINGS_DEFAULT_WIDTH_PX = 368;
 const EDITOR_SETTINGS_MAX_WIDTH_PX = 480;
@@ -1748,7 +1748,7 @@ export function ContentEditor({
 									<Banner
 										variant="error"
 										role="alert"
-										title={t`This entry is read-only because its schema uses field types this version of EmDash does not support.`}
+										title={t`This entry is read-only because its schema uses field types this version of EmPress does not support.`}
 										description={unsupportedFields
 											.map(
 												([name, field]) =>
@@ -2305,7 +2305,7 @@ function FieldRenderer({
 			<div className="grid gap-2">
 				<p className="text-base font-medium">{label}</p>
 				<p className="text-xs leading-4 text-kumo-subtle">
-					{t`This field cannot be edited by this version of EmDash.`}
+					{t`This field cannot be edited by this version of EmPress.`}
 				</p>
 			</div>
 		);

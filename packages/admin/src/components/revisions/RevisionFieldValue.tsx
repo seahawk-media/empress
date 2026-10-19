@@ -475,7 +475,7 @@ export function ValueFieldValue({
 	if (field.kind === "unsupported") {
 		return (
 			<p className="text-xs leading-4 text-kumo-subtle">
-				{t`This field cannot be edited by this version of EmDash.`}
+				{t`This field cannot be edited by this version of EmPress.`}
 			</p>
 		);
 	}

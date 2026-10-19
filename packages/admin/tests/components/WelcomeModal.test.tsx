@@ -9,7 +9,7 @@ import { render } from "../utils/render";
 // Constants
 // ---------------------------------------------------------------------------
 
-const WELCOME_MESSAGE_REGEX = /Welcome to EmDash, Alice!/;
+const WELCOME_MESSAGE_REGEX = /Welcome to EmPress, Alice!/;
 const ADMIN_TEXT_REGEX = /As an administrator, you can invite other users/;
 
 vi.mock("../../src/lib/api/client", async () => {

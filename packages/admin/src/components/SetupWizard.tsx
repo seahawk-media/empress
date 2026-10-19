@@ -175,8 +175,8 @@ function SiteStep({ seedInfo, onNext, isLoading, error, seedProgress }: SiteStep
 				/>
 				<Radio.Item
 					value="import"
-					label={t`Import an existing EmDash site`}
-					description={t`Once setup is done, upload a .emdash package exported from another EmDash site.`}
+					label={t`Import an existing EmPress site`}
+					description={t`Once setup is done, upload a .emdash package exported from another EmPress site.`}
 				/>
 			</Radio.Group>
 

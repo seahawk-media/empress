@@ -99,7 +99,7 @@ export function WelcomeModal({ open, onClose, userName, userRole }: WelcomeModal
 
 	const firstName = userName?.split(" ")?.[0]?.trim() ?? "";
 	const titleDescriptor =
-		firstName.length > 0 ? msg`Welcome to EmDash, ${firstName}!` : msg`Welcome to EmDash!`;
+		firstName.length > 0 ? msg`Welcome to EmPress, ${firstName}!` : msg`Welcome to EmPress!`;
 
 	return (
 		<Dialog.Root open={open} onOpenChange={(isOpen: boolean) => !isOpen && handleGetStarted()}>

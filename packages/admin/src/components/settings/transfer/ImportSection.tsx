@@ -208,7 +208,7 @@ export function ImportSection({ capabilities }: { capabilities: TransferCapabili
 	return (
 		<SettingsSection
 			title={t`Import`}
-			description={t`Replace this site’s content with a package exported from another EmDash site.`}
+			description={t`Replace this site’s content with a package exported from another EmPress site.`}
 			actions={
 				cancellable ? (
 					<Button variant="secondary" onClick={() => setConfirmAction("cancel")}>
@@ -386,7 +386,7 @@ function IneligibleNotice({ capabilities }: { capabilities: TransferCapabilities
 				<div>
 					<p className="font-medium">{t`This site can’t receive an import`}</p>
 					<p className="mt-0.5 max-w-2xl text-pretty text-kumo-subtle">
-						{t`An import replaces a new site’s starter content, so it only runs on a site with no content of its own. To move content here, set up a new EmDash site and import into that. These are what this site already has:`}
+						{t`An import replaces a new site’s starter content, so it only runs on a site with no content of its own. To move content here, set up a new EmPress site and import into that. These are what this site already has:`}
 					</p>
 				</div>
 				<ul className="list-disc space-y-1 ps-5 text-kumo-subtle">

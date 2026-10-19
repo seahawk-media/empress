@@ -1978,7 +1978,7 @@ export function MediaDetailPanel({
 					title={t`This cannot be undone`}
 					description={
 						<span className="text-[14px] leading-5">
-							{t`EmDash does not keep the previous image.`}
+							{t`EmPress does not keep the previous image.`}
 						</span>
 					}
 					className="mt-4 text-[14px]"
@@ -2012,7 +2012,7 @@ export function MediaDetailPanel({
 					title={t`This cannot be undone`}
 					description={
 						<span className="text-[14px] leading-5">
-							{t`EmDash does not keep the uncropped image.`}
+							{t`EmPress does not keep the uncropped image.`}
 						</span>
 					}
 					className="mt-4 text-[14px]"

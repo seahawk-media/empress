@@ -25,7 +25,7 @@ declare module "@tanstack/react-router" {
 export interface ShellProps {
 	children: React.ReactNode;
 	manifest: {
-		collections: Record<string, { label: string }>;
+		collections: Record<string, { label: string; hidden?: boolean }>;
 		plugins: Record<
 			string,
 			{
@@ -43,6 +43,7 @@ export interface ShellProps {
 		i18n?: { defaultLocale: string; locales: string[] };
 		version?: string;
 		registryConfigurationError?: AdminManifest["registryConfigurationError"];
+		admin?: { siteName?: string };
 	};
 }
 
@@ -101,7 +102,7 @@ export function Shell({ children, manifest }: ShellProps) {
 			side={sidebarSide}
 			style={
 				{
-					"--sidebar-bg": "var(--color-kumo-elevated)",
+					"--sidebar-bg": "var(--empress-menu-bg, var(--color-kumo-elevated))",
 					height: "100svh",
 					minHeight: "0",
 					overflow: "hidden",
@@ -113,7 +114,7 @@ export function Shell({ children, manifest }: ShellProps) {
 
 			{/* Main content area — scrolls independently so sidebar stays full height */}
 			<div className="flex flex-1 flex-col overflow-hidden">
-				<Header />
+				<Header siteName={manifest.admin?.siteName} collections={manifest.collections} />
 				{manifest.registryConfigurationError && (
 					<div className="space-y-3 px-6 pt-6">
 						<RegistryConfigurationBanner error={manifest.registryConfigurationError} />
@@ -130,6 +131,12 @@ export function Shell({ children, manifest }: ShellProps) {
 					}
 				>
 					{children}
+					{!fullBleed && (
+						<footer className="empress-footer">
+							<span>{t`Thank you for creating with EmPress.`}</span>
+							{manifest.version && <span>{t`Version ${manifest.version}`}</span>}
+						</footer>
+					)}
 				</main>
 			</div>
 

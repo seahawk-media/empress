@@ -266,7 +266,7 @@ export function PlanReview({
 					</div>
 					<div>
 						<dt className="text-kumo-subtle">{t`Exported with`}</dt>
-						<dd>{t`EmDash ${plan.origin.createdByEmDashVersion}`}</dd>
+						<dd>{t`EmPress ${plan.origin.createdByEmDashVersion}`}</dd>
 					</div>
 					<div>
 						<dt className="text-kumo-subtle">{t`Source site ID`}</dt>

@@ -343,7 +343,7 @@ export function MarketplacePluginDetail({
 							<div className="space-y-1 text-xs text-kumo-subtle">
 								<div>v{latest.version}</div>
 								{latest.minEmDashVersion && (
-									<div>{t`Requires EmDash ${latest.minEmDashVersion}`}</div>
+									<div>{t`Requires EmPress ${latest.minEmDashVersion}`}</div>
 								)}
 								<div>{t`Published ${isolate(formatDate(latest.publishedAt, i18n.locale))}`}</div>
 								{latest.bundleSize > 0 && <div>{formatBytes(latest.bundleSize)}</div>}

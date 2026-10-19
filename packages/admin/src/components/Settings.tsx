@@ -123,7 +123,7 @@ export function Settings() {
 							to="/settings/transfer"
 							icon={<ArrowsLeftRight className="h-5 w-5" />}
 							title={t`Transfer`}
-							description={t`Move this site to another EmDash installation, or import a site package`}
+							description={t`Move this site to another EmPress installation, or import a site package`}
 						/>
 					) : null}
 				</SettingsSection>

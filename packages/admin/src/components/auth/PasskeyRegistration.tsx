@@ -636,7 +636,7 @@ export function PasskeyRegistration({
 		return (
 			<div className="space-y-5">
 				<PasskeyIntroduction
-					storage={t`The credential manager on the phone or tablet you choose saves it. EmDash does not receive the passkey.`}
+					storage={t`The credential manager on the phone or tablet you choose saves it. EmPress does not receive the passkey.`}
 				/>
 				<div>
 					<h4 className="text-sm font-medium">{t`What happens next?`}</h4>
@@ -741,7 +741,7 @@ export function PasskeyRegistration({
 					{t`Create passkey`}
 				</Button>
 				<p className="text-center text-xs text-kumo-subtle">
-					{t`EmDash never receives your PIN, password, or biometric information.`}
+					{t`EmPress never receives your PIN, password, or biometric information.`}
 				</p>
 				{onBack && (
 					<Button type="button" variant="ghost" className="w-full justify-center" onClick={onBack}>

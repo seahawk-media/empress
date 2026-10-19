@@ -153,8 +153,8 @@ describe("LoginPage", () => {
 
 	// Regression test for #639 / PR #705: the login page must reflect the
 	// configured admin.logo/siteName (white-label branding), not the stock
-	// hardcoded EmDash mark — same as the Sidebar and SetupWizard already do.
-	it("renders the configured admin logo and site name instead of the stock EmDash mark", async () => {
+	// hardcoded EmPress mark — same as the Sidebar and SetupWizard already do.
+	it("renders the configured admin logo and site name instead of the stock EmPress mark", async () => {
 		const screen = await render(
 			<QueryWrapper>
 				<AdminBrandingProvider
@@ -168,16 +168,16 @@ describe("LoginPage", () => {
 		await expect.element(logoImg).toBeInTheDocument();
 		expect(logoImg.element().getAttribute("src")).toBe("https://example.com/logo.png");
 		// The stock lockup must not also be rendered
-		expect(screen.getByRole("img", { name: "EmDash" }).query()).toBeNull();
+		expect(screen.getByRole("img", { name: "EmPress" }).query()).toBeNull();
 	});
 
-	it("falls back to the stock EmDash mark when no admin branding is configured", async () => {
+	it("falls back to the stock EmPress mark when no admin branding is configured", async () => {
 		const screen = await render(
 			<QueryWrapper>
 				<LoginPage />
 			</QueryWrapper>,
 		);
-		await expect.element(screen.getByRole("img", { name: "EmDash" })).toBeInTheDocument();
+		await expect.element(screen.getByRole("img", { name: "EmPress" })).toBeInTheDocument();
 	});
 
 	it("falls back to neutral help text for providers without a loginHelp export", async () => {

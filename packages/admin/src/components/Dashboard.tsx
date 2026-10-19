@@ -270,8 +270,8 @@ function SiteImportHint({ stats }: { stats: DashboardStats }) {
 		<Banner
 			variant="secondary"
 			icon={<FileArrowUp aria-hidden="true" />}
-			title={t`Moving from another EmDash site?`}
-			description={t`This site has no content yet, so you can import a .emdash package exported from another EmDash site.`}
+			title={t`Moving from another EmPress site?`}
+			description={t`This site has no content yet, so you can import a .emdash package exported from another EmPress site.`}
 			action={
 				<div className="flex items-center gap-1">
 					<RouterLinkButton

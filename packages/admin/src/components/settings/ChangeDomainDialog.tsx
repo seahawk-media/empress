@@ -118,7 +118,7 @@ export function ChangeDomainDialog({
 						<li>
 							{t`Point the domain at this site. On Cloudflare, open your Worker in Workers & Pages, go to the Domains tab, and add the domain.`}
 						</li>
-						<li>{t`Enter the domain below. EmDash checks that it serves this site before switching.`}</li>
+						<li>{t`Enter the domain below. EmPress checks that it serves this site before switching.`}</li>
 					</ol>
 
 					<div className="mt-5">

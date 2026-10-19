@@ -44,7 +44,7 @@ export function TransferSettings({ focusImport = false }: { focusImport?: boolea
 	}, [focusImport, ready]);
 
 	const title = t`Transfer`;
-	const description = t`Move this site to another EmDash installation, or import a site package into this one.`;
+	const description = t`Move this site to another EmPress installation, or import a site package into this one.`;
 
 	if (userLoading || (isAdmin && capabilitiesQuery.isPending)) {
 		return (

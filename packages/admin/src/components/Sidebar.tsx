@@ -594,7 +594,7 @@ export function SidebarNav({ manifest }: SidebarNavProps) {
 					<span className="grid min-w-0 flex-1 grid-cols-[1fr] transition-[grid-template-columns] duration-(--sidebar-animation-duration) ease-(--sidebar-easing) motion-reduce:transition-none group-data-[state=collapsed]/sidebar:grid-cols-[0fr]">
 						<span className="min-w-0 overflow-hidden">
 							<span className="block w-[calc(var(--sidebar-width)-4.5rem)] truncate font-semibold">
-								{manifest.admin?.siteName || "EmDash"}
+								{manifest.admin?.siteName || "EmPress"}
 							</span>
 						</span>
 					</span>

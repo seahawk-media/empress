@@ -64,7 +64,7 @@ export function CoreUpdateBanner() {
 			role="status"
 			variant="default"
 			icon={<ArrowCircleUp />}
-			title={t`EmDash ${latest} is available (you're running ${status.current})`}
+			title={t`EmPress ${latest} is available (you're running ${status.current})`}
 			description={t`Update the emdash package in your project and redeploy to get the latest fixes.`}
 			action={
 				<div className="flex items-center gap-2">

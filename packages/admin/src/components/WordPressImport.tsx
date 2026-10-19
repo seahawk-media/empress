@@ -1576,7 +1576,7 @@ function PluginAuthStep({
 							<li>{t`1. Log into your WordPress admin`}</li>
 							<li>{t`2. Go to Users → Profile`}</li>
 							<li>{t`3. Scroll to "Application Passwords"`}</li>
-							<li>{t`4. Enter "EmDash" and click "Add New"`}</li>
+							<li>{t`4. Enter "EmPress" and click "Add New"`}</li>
 							<li>{t`5. Copy the generated password`}</li>
 						</ol>
 						<a
@@ -2145,7 +2145,7 @@ function MediaStep({
 							<p className="font-medium">{t`What happens when you import:`}</p>
 							<ul className="mt-1 space-y-1 text-kumo-subtle">
 								<li>{t`• Files are downloaded from your WordPress site`}</li>
-								<li>{t`• Uploaded to your EmDash media storage`}</li>
+								<li>{t`• Uploaded to your EmPress media storage`}</li>
 								<li>{t`• URLs in your content are updated automatically`}</li>
 							</ul>
 						</div>
@@ -2507,7 +2507,7 @@ function AuthorMappingStep({
 					<div>
 						<h3 className="text-lg font-medium">{t`Map Authors`}</h3>
 						<p className="text-kumo-subtle mt-1">
-							{t`Assign WordPress authors to EmDash users. Posts will be attributed to the selected user.`}
+							{t`Assign WordPress authors to EmPress users. Posts will be attributed to the selected user.`}
 						</p>
 						{matchedCount > 0 && (
 							<p className="text-sm text-kumo-success mt-2">
@@ -2553,7 +2553,7 @@ function AuthorMappingStep({
 											emdashUsers.map((user) => [user.id, user.name || user.email]),
 										),
 									}}
-									aria-label={t`Map WordPress user ${mapping.wpLogin} to EmDash user`}
+									aria-label={t`Map WordPress user ${mapping.wpLogin} to EmPress user`}
 									className="w-48"
 								/>
 							</div>
@@ -2567,7 +2567,7 @@ function AuthorMappingStep({
 					<div className="flex gap-3">
 						<Warning className="h-5 w-5 text-kumo-warning flex-shrink-0" />
 						<div>
-							<p className="font-medium">{t`No EmDash users found`}</p>
+							<p className="font-medium">{t`No EmPress users found`}</p>
 							<p className="text-sm text-kumo-subtle mt-1">
 								{t`All imported content will be unassigned. You can reassign authors later from the content editor.`}
 							</p>

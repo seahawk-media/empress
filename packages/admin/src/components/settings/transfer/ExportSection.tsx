@@ -96,7 +96,7 @@ export function ExportSection() {
 	return (
 		<SettingsSection
 			title={t`Export`}
-			description={t`Download this site as a single .emdash package file that another EmDash site can import.`}
+			description={t`Download this site as a single .emdash package file that another EmPress site can import.`}
 		>
 			<SettingRow>
 				<div className="grid gap-3 text-sm leading-5">

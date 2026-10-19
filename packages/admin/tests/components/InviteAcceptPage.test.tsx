@@ -52,7 +52,7 @@ describe("InviteAcceptPage", () => {
 
 	// Regression test for #639 / PR #705: the invite-accept page must reflect
 	// the configured admin.logo/siteName (white-label branding), not the
-	// stock hardcoded EmDash mark — same as LoginPage/SignupPage.
+	// stock hardcoded EmPress mark — same as LoginPage/SignupPage.
 	it("renders the configured admin logo/site name instead of the stock mark", async () => {
 		const screen = await render(
 			<AdminBrandingProvider
@@ -64,11 +64,11 @@ describe("InviteAcceptPage", () => {
 		const logoImg = screen.getByRole("img", { name: "Acme CMS" });
 		await expect.element(logoImg).toBeInTheDocument();
 		expect(logoImg.element().getAttribute("src")).toBe("https://example.com/logo.png");
-		expect(screen.getByRole("img", { name: "EmDash" }).query()).toBeNull();
+		expect(screen.getByRole("img", { name: "EmPress" }).query()).toBeNull();
 	});
 
-	it("falls back to the stock EmDash mark when no admin branding is configured", async () => {
+	it("falls back to the stock EmPress mark when no admin branding is configured", async () => {
 		const screen = await render(<InviteAcceptPage />);
-		await expect.element(screen.getByRole("img", { name: "EmDash" })).toBeInTheDocument();
+		await expect.element(screen.getByRole("img", { name: "EmPress" })).toBeInTheDocument();
 	});
 });

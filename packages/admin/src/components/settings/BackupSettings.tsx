@@ -201,7 +201,7 @@ export function BackupSettings() {
 					<SettingRow>
 						<p className="text-sm leading-5 text-pretty text-kumo-subtle">
 							<Trans>
-								To move a site to another EmDash installation, use{" "}
+								To move a site to another EmPress installation, use{" "}
 								<Link
 									to="/settings/transfer"
 									className="font-medium text-kumo-link underline underline-offset-2"
@@ -273,7 +273,7 @@ export function BackupSettings() {
 								<Banner
 									variant="alert"
 									title={t`Automatic Backups`}
-									description={t`Automatic backups need a storage backend (R2, S3, or local storage). Configure storage in your EmDash config to enable them.`}
+									description={t`Automatic backups need a storage backend (R2, S3, or local storage). Configure storage in your EmPress config to enable them.`}
 									role="status"
 								/>
 							</SettingRow>
@@ -291,7 +291,7 @@ export function BackupSettings() {
 				>
 					{!storageAvailable ? (
 						<SettingRow className="py-8 text-center text-sm text-kumo-subtle">
-							{t`Automatic backups need a storage backend (R2, S3, or local storage). Configure storage in your EmDash config to enable them.`}
+							{t`Automatic backups need a storage backend (R2, S3, or local storage). Configure storage in your EmPress config to enable them.`}
 						</SettingRow>
 					) : archives.length === 0 ? (
 						<SettingRow className="py-8 text-center text-sm text-kumo-subtle">

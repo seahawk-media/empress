@@ -313,7 +313,7 @@ export function MediaUsageSettings() {
 			<MessagePage
 				title={title}
 				description={description}
-				message={t`Keep editing paused and deploy a compatible EmDash version before continuing.`}
+				message={t`Keep editing paused and deploy a compatible EmPress version before continuing.`}
 			/>
 		);
 	}
@@ -322,7 +322,7 @@ export function MediaUsageSettings() {
 			<MessagePage
 				title={title}
 				description={description}
-				message={t`Reload after updating EmDash before trying again.`}
+				message={t`Reload after updating EmPress before trying again.`}
 			/>
 		);
 	}
@@ -484,7 +484,7 @@ function StatusRow({
 				</span>
 			</>
 		) : (
-			t`EmDash is scanning existing content.`
+			t`EmPress is scanning existing content.`
 		);
 		badge = progressError
 			? t`Needs attention`
@@ -572,8 +572,8 @@ function ConfirmationDialog({
 			title={retry ? t`Retry setup?` : t`Turn on media usage tracking?`}
 			description={
 				retry
-					? t`EmDash will continue setup and resume scanning existing content.`
-					: t`EmDash will scan existing content to show where media is used.`
+					? t`EmPress will continue setup and resume scanning existing content.`
+					: t`EmPress will scan existing content to show where media is used.`
 			}
 			confirmLabel={retry ? t`Retry setup` : t`Turn on`}
 			pendingLabel={retry ? t`Retrying…` : t`Turning on…`}
